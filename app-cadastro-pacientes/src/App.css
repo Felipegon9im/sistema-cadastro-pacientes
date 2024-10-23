@@ -1,7 +1,7 @@
 #root {
-  margin: 0 auto;
+  margin: 1rem;
   padding: 0;
-  background-color:ghostwhite
+  
 }
 
 
@@ -9,8 +9,8 @@
 /* App.css */
 .custom-background {
   
-  background-color: #f0f8ff; /* cor de exemplo: um azul claro */
-  padding: 20px; /* Adiciona espaçamento interno */
+  background-color: hsl(180, 17%, 93%); /* cor de exemplo: um azul claro */
+  padding: 0px; /* Adiciona espaçamento interno */
   border-radius: 10px; /* Adiciona cantos arredondados */
 
 
