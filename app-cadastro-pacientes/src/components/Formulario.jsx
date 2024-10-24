@@ -1,67 +1,33 @@
-
-import React, { useState } from "react";
-
+import React from 'react';
 
 const Formulario = () => {
 
-    
-    const camposIniciais = {
 
-        nomeCompleto: '',
-        telefone: '',
-        email: '',
-        endereco: ''
-    }
 
-    let {values, setValues} = useState (camposIniciais)
-    
+
     return (
-    <div className="container">
-
-<form>
-        <div className="form-group input-group col">
-            <div className="input-grou-prepend">
-                <div className="input-group group-text">
-                    <i className="bi bi-person-badge"></i>
+        <form className="w-100">
+            <div className="form-row">
+                {/* Input 1: Nome Completo */}
+                <div className="col-md-4 mb-3">
+                    <label htmlFor="nomeCompleto"><i className="bi bi-person-fill"></i> Nome Completo</label>
+                    <input type="text" className="form-control" id="nomeCompleto" placeholder="Nome Completo" />
                 </div>
 
+                {/* Input 2: Telefone */}
+                <div className="col-md-4 mb-3">
+                    <label htmlFor="telefone"><i className="bi bi-phone-fill"></i> Telefone</label>
+                    <input type="text" className="form-control" id="telefone" placeholder="Telefone" />
+                </div>
+
+                {/* Input 3: E-mail */}
+                <div className="col-md-4 mb-3">
+                    <label htmlFor="email"><i className="bi bi-envelope-fill"></i> E-mail</label>
+                    <input type="email" className="form-control" id="email" placeholder="E-mail" />
+                </div>
             </div>
-            <input className="form-control" placeholder="Nome Completo" name="nomeCompleto" value={values.nomeCompleto} />
-        </div>
-        <div className="row">
-        <div className="form-group input-group col">
-            <div className="input-grou-prepend">
-                <div className="input-group group-text">
-                    <i className="bi bi-person-badge"></i>
-                </div>
-
-                </div>
-                <input className="form-control" placeholder="Telefone" name="telefone" value={values.telefone} />
-            </div>
-        </div>
-        <div className="row">
-        <div className="form-group input-group col">
-            <div className="input-grou-prepend">
-                <div className="input-group group-text">
-                    <i className="bi bi-person-badge"></i>
-                </div>
-
-                </div>
-                <input className="form-control" placeholder="E-mail" name="email" value={values.email} />
-            </div>
-            </div>
-
         </form>
-
-
-
-    </div>  
-        
-
-    
-
-    )
+    );
 }
-    export default Formulario;
 
-
+export default Formulario;
